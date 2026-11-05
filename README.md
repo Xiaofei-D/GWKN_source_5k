@@ -1,10 +1,23 @@
 # NINJAX 5k GW+KN Dataset
 
-This folder contains a preliminary population of 5,000 binary neutron star injections generated with [NINJAX](https://github.com/nuclear-multimessenger-astronomy/ninjax).
+This repository contains a preliminary population of 5,000 binary neutron star injections generated with [NINJAX](https://github.com/nuclear-multimessenger-astronomy/ninjax).
+
+## Downloading the dataset
+
+The generated `signals.h5` file is not stored directly in the repository. It is provided as a GitHub Release asset.
+
+To download it with the GitHub CLI:
+
+```bash
+gh release download v0.1 \
+    -R Xiaofei-D/GWKN_source_5k \
+    -p signals.h5
+```
 
 ## Files
 
-- `signals.h5` — generated GW polarisations, KN light curves, and event parameters.
+- `signals.h5` — generated GW polarisations, KN light curves, and event parameters. Available from the GitHub Release.
+- `signals.h5.sha256` — SHA-256 checksum for verifying the downloaded dataset.
 - `generate_dataset.sh` — script for reproducing the dataset.
 - `examples/read_hdf5.py` — example script for reading `signals.h5`.
 - `data/prior.toml` — prior used to sample the binary population.
