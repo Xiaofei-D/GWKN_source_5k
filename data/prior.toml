@@ -1,0 +1,13 @@
+# prior.toml
+[prior]
+mass_1              = { type = "uniform", min = 1.2, max = 1.6 }
+mass_2              = { type = "uniform", min = 1.0, max = 1.2 }
+luminosity_distance = { type = "power_law", min = 50.0, max = 200.0, alpha = 2.0 }
+ra                  = { type = "uniform", min = 0.0, max = 6.283185307179586 }
+dec                 = { type = "cosine" }
+psi                 = { type = "uniform", min = 0.0, max = 3.141592653589793 }
+theta_jn            = { type = "sine" }
+phase               = { type = "uniform", min = 0.0, max = 6.283185307179586 }
+geocent_time        = { type = "uniform", min = 1187008882.0, max = 1187008883.0 }
+chi_1               = { type = "uniform", min = -0.05, max = 0.05 }
+chi_2               = { type = "uniform", min = -0.05, max = 0.05 }
